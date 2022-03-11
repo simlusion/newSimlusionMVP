@@ -9,11 +9,13 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="style.css" />
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-    <title>S I M L U S I O N</title>
+    <title>Simlusion</title>
   </head>
   <body>
     <canvas id="bg"> </canvas>
@@ -179,7 +181,7 @@
         <h2>Pricing</h2>
         <br />
         <p>The price of our service is simple:</p>
-        <h2 class="border-pink">$0.00 per channel</h2>
+        <h2 class="border-pink">$X.XX per channel</h2>
         <br />
         <p>
           More than one channel is recommended for corporate clients and
@@ -209,7 +211,9 @@
         <p>Find out more on our social media:</p>
         <div class="social">
           <a href=""><i class="ri-facebook-fill text-glitch"></i></a>
-          <a href=""><i class="ri-twitter-line text-glitch"></i></a>
+          <a href="https://twitter.com/simlusion1"
+            ><i class="ri-twitter-line text-glitch"></i
+          ></a>
           <a href=""><i class="ri-medium-line text-glitch"></i></a>
         </div>
         <br />
@@ -224,7 +228,6 @@
         >
           <input
             name="name"
-            id="name"
             type="text"
             class="feedback-input"
             placeholder="Your Name"
@@ -232,7 +235,6 @@
           />
           <input
             name="email"
-            id="email"
             type="text"
             class="feedback-input"
             placeholder="Email"
@@ -240,12 +242,20 @@
           />
           <textarea
             name="text"
-            id="message"
             class="feedback-input"
             placeholder="How can we help you?"
+            required
           ></textarea>
-          <input type="submit" value="SUBMIT" />
+          <button type="submit">SUBMIT</button>
+
+          <input
+            type="hidden"
+            name="_next"
+            value="http://simlusion.com/secret/contact.html"
+          />
+          <input type="hidden" name="_subject" value="Main contact form" />
           <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display: none" />
         </form>
         <br />
         <br />
@@ -258,6 +268,8 @@
         </div>
       </section>
     </main>
+    <script src="three.js"></script>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

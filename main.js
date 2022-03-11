@@ -1,7 +1,3 @@
-import './style.css'
-
-import * as THREE from 'three'
-
 /* Scena light, camera */
 const scene = new THREE.Scene()
 
